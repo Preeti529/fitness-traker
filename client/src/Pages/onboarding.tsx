@@ -12,7 +12,7 @@ import Button from "../components/ui/Button";
 import Slider from "../components/ui/Slider";
 //import mockApi from "../assets/mockApi";
 import { ageRanges, goalOptions } from "../assets/assets";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import api from "../configs/api";
 //import {setOnboardingCompleted} from "../context/AppContext"
 
