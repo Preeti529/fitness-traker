@@ -4,7 +4,13 @@ const config: Core.Config.Middlewares = [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://fitness-traker-snowy.vercel.app', 'http://localhost:5173'],
+      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
