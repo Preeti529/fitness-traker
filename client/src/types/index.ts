@@ -80,8 +80,10 @@ export type AppContextType = {
     fetchUser: (token: string) => Promise<void>;
     isUserFetched: boolean;
     logout: () => void;
-    onboardingCompleted: boolean;
-    setOnboardingCompleted: React.Dispatch<React.SetStateAction<boolean>>;
+    // onboardingCompleted: boolean;
+    // setOnboardingCompleted: React.Dispatch<React.SetStateAction<boolean>>;
+    onboardingComplete: boolean;
+    setOnboardingComplete: React.Dispatch<React.SetStateAction<boolean>>;
     allFoodLogs: FoodEntry[];
     setAllFoodLogs: React.Dispatch<React.SetStateAction<FoodEntry[]>>;
     allActivityLogs: ActivityEntry[];
@@ -96,8 +98,10 @@ export const initialState: AppContextType = {
     fetchUser: async () => {},
     isUserFetched: false,
     logout: () => {},
-    onboardingCompleted: false,
-    setOnboardingCompleted: () => {},
+    // onboardingCompleted: false,
+    // setOnboardingCompleted: () => {},
+    onboardingComplete: false,
+    setOnboardingComplete: () => {},
     allFoodLogs: [],
     setAllFoodLogs: () => {},
     allActivityLogs: [],

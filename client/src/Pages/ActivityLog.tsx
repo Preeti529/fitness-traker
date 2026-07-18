@@ -1,4 +1,4 @@
-import { Activity, useEffect, useState } from "react"
+import {  useEffect, useState } from "react"
 import { useAppContext } from "../context/AppContext"
 import type { ActivityEntry } from "../types"
 import Card from "../components/ui/Card"

@@ -6,7 +6,7 @@ import type { ProfileFormData } from "../types";
 import { useEffect, useState } from "react";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
-import { goalLabels, goalOptions, mockApi } from "../assets/assets";
+import { goalLabels, goalOptions} from "../assets/assets";
 import Input from "../components/ui/Input";
 import Select from "../components/ui/Select";
 import toast from "react-hot-toast";

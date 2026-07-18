@@ -57,7 +57,7 @@ import type { UserData, FoodEntry, ActivityEntry } from "../types";
 
 export const mockApi = {
   auth: {
-    login: async (credentials: any) => {
+    login: async (_credentials: any) => {
       return {
         data: {
           user: dummyUser,
@@ -66,7 +66,7 @@ export const mockApi = {
       }
     },
 
-    register: async (credentials: any) => {
+    register: async (_credentials: any) => {
       return {
         data: {
           user: dummyUser,

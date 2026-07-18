@@ -2,11 +2,11 @@
 
 
 
-import { ArrowLeft, ArrowRight, Option, PersonStanding, ScaleIcon, Target, User, Weight } from "lucide-react";
+import { ArrowLeft, ArrowRight, PersonStanding, ScaleIcon, Target, User} from "lucide-react";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useAppContext } from "../context/AppContext";
-import type { ProfileFormData, UserData } from "../types/index";
+import type { ProfileFormData } from "../types/index";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
 import Slider from "../components/ui/Slider";
@@ -39,7 +39,7 @@ const { setOnboardingComplete, fetchUser, user } = useAppContext();
     });
   };
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
     const handleNext = async () => {
     // Step 1 Validation
